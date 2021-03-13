@@ -15,6 +15,20 @@ TRAINING_RUNS = 2000
 -----------------------------
 '''
 
+'''
+GENERAL FORMULAS:
+
+h_theta(x) = sum from i to n (theta_n * x_n)
+	- n will be for an (n - 1)-nomial equation, so binomial is n = 2 + 1
+	- that is because x_0 is a dummy feature meant to always equal 1, so that you can have a (y=mx+b) and the +b be a theata*x
+
+cost function
+J(x) = 1/2 (h(x) - y)^2
+
+derivative of cost
+(h(x) - y) * x_j (x_0 is 1)
+'''
+
 class Regression:
 
 	def __init__(self, points):
